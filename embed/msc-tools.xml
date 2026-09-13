@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- MSC Tools — PowerPoint content add-in (sideload: Insert > Add-ins > My Add-ins > Upload My Add-in) -->
+<OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:type="ContentApp">
+  <Id>ce60f001-83c3-46d6-9392-3e5fb866f5ca</Id>
+  <Version>1.0.0.0</Version>
+  <ProviderName>MSC Industrial Supply</ProviderName>
+  <DefaultLocale>en-US</DefaultLocale>
+  <DisplayName DefaultValue="MSC Tools"/>
+  <Description DefaultValue="MSC Tools tooling advisor prototype (simulated data). Opens on the Find tab."/>
+  <IconUrl DefaultValue="https://gomezm03.github.io/fennec_v2/embed/icon-32.png"/>
+  <HighResolutionIconUrl DefaultValue="https://gomezm03.github.io/fennec_v2/embed/icon-64.png"/>
+  <SupportUrl DefaultValue="https://gomezm03.github.io/fennec_v2/"/>
+  <AppDomains>
+    <AppDomain>https://gomezm03.github.io</AppDomain>
+  </AppDomains>
+  <Hosts>
+    <Host Name="Presentation"/>
+  </Hosts>
+  <DefaultSettings>
+    <SourceLocation DefaultValue="https://gomezm03.github.io/fennec_v2/embed/index.html"/>
+    <RequestedWidth>480</RequestedWidth>
+    <RequestedHeight>720</RequestedHeight>
+  </DefaultSettings>
+  <Permissions>ReadDocument</Permissions>
+</OfficeApp>

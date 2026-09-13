@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MSC Tools</title>
+<!-- Office.js lets PowerPoint host this page as a content add-in; the page also works in any browser. -->
+<script src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js"></script>
+<style>html,body{margin:0;height:100%;overflow:hidden;background:#F2F4F7}iframe{border:0;width:100%;height:100%;display:block}</style>
+</head>
+<body>
+<iframe id="app" src="../index.html" title="MSC Tools" allow="clipboard-write"></iframe>
+<script>
+/* Deep links — open the app already on a given screen. All optional, combine freely:
+   ?tab=find|match|crib|library|cart      switch tab
+   ?mats=P,N                              select ISO material tiles (Find step 1)
+   ?tool=endmill|ball|drill|tap|chamfer   pick a tool type (Find step 2)
+   ?feature=pocket|slot|floor|contour|hole|thread|edge   "describe the feature" instead
+   ?step=0..3                             jump to a wizard step
+   ?run=1                                 go straight to results
+   ?sku=09990412                          open a product page
+   ?match=1                               run the pre-filled cross-reference
+   ?fusion=1                              load the Fusion library audit (Library tab)
+   Example for a slide: embed/index.html?mats=P&feature=thread&run=1                     */
+(function () {
+  const q = new URLSearchParams(location.search), f = document.getElementById('app');
+  const sleep = ms => new Promise(r => setTimeout(r, ms));
+  f.addEventListener('load', async () => {
+    const w = f.contentWindow, d = f.contentDocument;
+    for (let i = 0; i < 100 && !(w.MSC && w.MSC.db && w.MSC.db.catalog); i++) await sleep(100);
+    if (!(w.MSC && w.MSC.db && w.MSC.db.catalog)) return;
+    const click = sel => { const el = d.querySelector(sel); if (el) el.click(); return !!el; };
+    if (q.get('tab') && q.get('tab') !== 'find') click(`.p-tab[data-tab="${q.get('tab')}"]`);
+    if (q.get('mats')) q.get('mats').split(',').forEach(m => click(`[data-iso="${m.trim().toUpperCase()}"]`));
+    if (q.get('tool') || q.get('feature')) {
+      click('#wizNext'); await sleep(50);
+      if (q.get('feature')) click(`[data-feat="${q.get('feature')}"]`); else click(`[data-tool="${q.get('tool')}"]`);
+    }
+    if (q.get('run')) { for (let i = 0; i < 4; i++) { click('#wizNext'); await sleep(50); } }
+    else if (q.get('step')) click(`#steprail [data-go="${q.get('step')}"]`);
+    if (q.get('match')) { click('#matchGo'); }
+    if (q.get('fusion')) { click('#xmFusion'); }
+    if (q.get('sku')) { const inp = d.getElementById('skuIn'); if (inp) { inp.value = q.get('sku'); d.getElementById('skuForm').requestSubmit(); } }
+    await sleep(300); if (d.activeElement && d.activeElement.blur) d.activeElement.blur();
+  });
+})();
+</script>
+</body>
+</html>
