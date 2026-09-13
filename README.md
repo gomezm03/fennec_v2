@@ -1,6 +1,6 @@
 # MSC Tools — Tooling Advisor
 
-**Interactive prototype · MSC Tools, a sub-brand of MSC · v11.1 · September 2026**
+**Interactive prototype · MSC Tools, a sub-brand of MSC · v12 · September 2026**
 
 A working mock of a tooling-advisor application for CAM programmers: guided
 tool selection, competitor cross-reference, shop-crib inventory, Autodesk
@@ -9,8 +9,9 @@ show the end-to-end flow, not to pilot it. Every SKU, part number, price, stock
 count, account number, and document number is fictional, in realistic formats.
 A persistent **SIMULATED DATA** badge sits in the header.
 
-v11 applies the September 2026 refinement spec (v11.1 reworks Find as a
-tool-first advisor with a describe-the-feature path): brand palette and type scale,
+v11 applied the September 2026 refinement spec; v11.1 reworked Find as a
+tool-first advisor with a describe-the-feature path; v12 is the native-feel
+design pass. Together they bring: brand palette and type scale,
 the official MSC logo, a narrow-first layout for a docked Fusion or Inventor
 palette, an in-panel product page modeled on mscdirect.com, inline forms in
 place of native dialogs, Autodesk-only export targets, and a data / mock-API /
@@ -52,19 +53,24 @@ editable on Find, Match, and Library, and stay in sync everywhere.
 | **Toasts** | Bottom-center confirmations; cart additions carry **Undo**. |
 | **Product page** | Full-height in-panel view with a back control to the originating tab — see §8 |
 
-**Design system (spec §3).** Bold Blue `#0057B8` for primary actions, active
-tab, links, fit %, the preferred-brand star, and the cursor bar beside each
-panel headline. Dark Blue `#012169` for the status bar and the Import & Match
-roll-up band. Bright Blue `#00A3E0` for the savings figure on dark surfaces.
-Blue tint `#EAF0FB` for cards and callouts. Red `#FF3333` only for the MSC
-logo, the sub-brand cursor bar, and below-minimum crib rows. Green for
-in-stock and savings chips; a slate chip for price increases. ISO material
-colors are the industry convention. Type: Arial for all UI (Bold, all caps, for
-headlines and section labels), a system monospace stack (Consolas, Menlo,
-Courier New) for part numbers, prices, and cutting parameters. One type scale:
-headline 16, section label 11 caps, body 13, secondary 11.5, data 12 mono.
-Controls are 32 px tall with a 4 px radius and have hover, focus, and disabled
-states. No font network requests.
+**Design system (v12).** A native-application feel in the spirit of Apple
+and Pixel interfaces, with the MSC palette and logo unchanged: system type
+(SF on Mac, Segoe UI on Windows, Roboto on Android and Chrome OS; no font
+network requests), a soft gray canvas with white cards lifted by layered
+shadows instead of borders, 10–14 px corners on cards and pill-shaped chips,
+search field, and status bar, a floating Dark Blue status pill, segmented
+controls for view toggles, a progress bar over the Find steps with slide
+transitions between them and a frosted sticky Back/Next footer, spring-style
+motion (180–280 ms, ease-out) on tiles, toasts, and page changes, and
+sentence-case headlines beside the Bold Blue cursor bar. Bold Blue `#0057B8`
+carries primary actions, the active rail item, links, fit %, and the
+preferred-brand star; Dark Blue `#012169` the status pill and roll-up band;
+Bright Blue `#00A3E0` the savings figure on dark surfaces; Red `#FF3333` only
+the MSC logo, the sub-brand cursor bar, badges, and below-minimum crib rows.
+ISO material colors are the industry convention. Monospace (SF Mono, Cascadia,
+Consolas, Menlo) for part numbers, prices, and cutting parameters. Controls
+are 36 px (30 px compact) with hover, pressed, focus, and disabled states.
+Reduced-motion preferences are respected.
 
 ---
 
@@ -322,7 +328,7 @@ MSC-carried brands; they are what makes the brand-agnostic advisor credible.
 
 ```
 index.html              application shell and the five tab views + product-page view
-css/style.css           design system: tokens, type scale, controls, narrow-first layout
+css/style.css           design system v12: tokens, system type, elevation, controls, motion, narrow-first layout
 js/state.js             single source of truth (brands, cart, library, crib, quotes, UI) + feature flags
 js/api.js               mock API layer: catalog.search/detail/lookup/crossRef/alternatives/oftenWith,
                         pricing.availability, cart.submit/saveQuote/requestQuote, crib.profiles/save/
