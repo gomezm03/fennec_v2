@@ -187,7 +187,7 @@
       S.brands.size ? [...S.brands].join(', ') : 'No preference'][i];
   }
   function renderRail() {
-    $('#steprail').innerHTML = STEPS.map((s, i) => `<button role="tab" aria-selected="${i === S.wiz.step}" class="${i === S.wiz.step ? 'cur' : ''}" data-go="${i}">
+    $('#steprail').innerHTML = STEPS.map((s, i) => `<button role="tab" aria-selected="${i === S.wiz.step}" class="${i === S.wiz.step ? 'cur' : i < S.wiz.step ? 'done' : ''}" data-go="${i}">
       <span class="sr-lab">${i + 1} · ${s}</span><span class="sr-val mono">${esc(railVal(i))}</span></button>`).join('');
   }
   $('#steprail').addEventListener('click', e => { const b = e.target.closest('[data-go]'); if (b) { S.wiz.step = +b.dataset.go; renderWiz(); } });
@@ -199,10 +199,13 @@
   const txt = (id, key, ph, mono = true) => `<input id="${id}" class="${mono ? 'mono' : ''}" value="${esc(S.wiz[key] || '')}" placeholder="${ph}" inputmode="decimal" autocomplete="off">`;
   const sel = (id, key, opts) => `<select id="${id}">${opts.map(([v, l]) => `<option value="${v}" ${S.wiz[key] === v ? 'selected' : ''}>${l}</option>`).join('')}</select>`;
 
+  let lastStep = 0;
   function renderWiz() {
     $('#findResults').hidden = true; $('#wizard').hidden = false;
     renderRail();
     const w = S.wiz, el = $('#wizStep'), g = currentGroup(), r = recs();
+    /* native-style slide between steps; re-trigger the animation on every render of a new step */
+    if (w.step !== lastStep) { el.classList.toggle('back', w.step < lastStep); el.style.animation = 'none'; void el.offsetWidth; el.style.animation = ''; lastStep = w.step; }
     if (w.step === 0) {
       el.innerHTML = `<h3 class="p-lab">What are you cutting?</h3>
         <p class="p-note">Pick the workpiece material — any combination. Coatings and presets follow the most conservative group selected.</p>
