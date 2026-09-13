@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MSC Tools — Tooling advisor</title>
+<meta name="description" content="MSC Tools, a tooling advisor application by MSC. Interactive prototype — all data simulated.">
+<link rel="icon" href="assets/msc-logo.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="panel" id="panel">
+
+  <header class="p-head">
+    <div class="p-brand">
+      <img class="msc-logo" src="assets/msc-logo.svg" alt="MSC" width="54" height="15">
+      <span class="p-ident">
+        <span class="p-logo">MSC Tools<span class="cursorbar" aria-hidden="true"></span></span>
+        <span class="p-sub">Tooling advisor</span>
+      </span>
+    </div>
+    <form class="gsearch" id="gForm" role="search">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.5-4.5"/></svg>
+      <input id="gSearch" placeholder="MSC # or keyword" aria-label="Search catalog by MSC number or keyword" autocomplete="off">
+      <button type="submit" id="gGo">Search</button>
+    </form>
+    <div class="p-acct" title="Simulated account">Acct #0000-DEMO<br>Bay 2 crib <b>&#10003; connected</b></div>
+    <span class="demopill" title="Every SKU, price, stock count and document number is fictional">SIMULATED DATA</span>
+  </header>
+
+  <div class="a-main">
+
+    <nav class="p-tabs" role="tablist" aria-label="Application sections">
+      <button class="p-tab" role="tab" aria-selected="true" data-tab="find" data-label="Find"><svg class="ic" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.5-4.5"/></svg><span class="lab">Find</span></button>
+      <button class="p-tab" role="tab" aria-selected="false" data-tab="match" data-label="Match"><svg class="ic" viewBox="0 0 24 24"><path d="M16 3h5v5M21 3l-7 7M8 21H3v-5M3 21l7-7"/></svg><span class="lab">Match</span></button>
+      <button class="p-tab" role="tab" aria-selected="false" data-tab="crib" data-label="Crib"><svg class="ic" viewBox="0 0 24 24"><path d="M3 8l9-5 9 5v8l-9 5-9-5z"/><path d="M3 8l9 5 9-5M12 13v8"/></svg><span class="lab">Crib</span></button>
+      <button class="p-tab" role="tab" aria-selected="false" data-tab="library" data-label="Library"><svg class="ic" viewBox="0 0 24 24"><path d="M4 20V5a2 2 0 012-2h13v14H6a2 2 0 00-2 2zm0 0a2 2 0 002 2h13"/></svg><span class="lab">Library</span><span class="bdg" id="libBadge"></span></button>
+      <button class="p-tab" role="tab" aria-selected="false" data-tab="cart" data-label="Cart"><svg class="ic" viewBox="0 0 24 24"><circle cx="9" cy="20" r="1.6"/><circle cx="18" cy="20" r="1.6"/><path d="M2 3h3l2.6 12.5a1.5 1.5 0 001.5 1.2h8.6a1.5 1.5 0 001.5-1.2L21 7H6"/></svg><span class="lab">Cart</span><span class="bdg" id="cartBadge"></span></button>
+    </nav>
+
+    <main class="p-body" id="pbody" tabindex="-1">
+
+      <section class="p-view on" id="view-find" aria-labelledby="h-find">
+        <div id="wizard">
+          <h2 class="p-h" id="h-find">Find the right tool</h2>
+          <p class="p-note">Four questions narrow the catalog to the tools that fit the job, with feeds and speeds presets matched to the material.</p>
+          <div class="steprail" id="steprail" role="tablist" aria-label="Wizard steps"></div>
+          <div id="wizStep"></div>
+          <div class="wiz-foot">
+            <button class="tbtn" id="wizBack">Back</button>
+            <span class="spacer"></span>
+            <button class="tbtn pri" id="wizNext">Next</button>
+          </div>
+          <form class="skubox" id="skuForm">
+            <label for="skuIn">Know the MSC #?</label>
+            <input id="skuIn" placeholder="09990412" inputmode="numeric" autocomplete="off">
+            <button class="tbtn" type="submit">Open product page</button>
+            <div class="recent" id="recentRow"></div>
+          </form>
+        </div>
+        <div id="findResults" hidden></div>
+      </section>
+
+      <section class="p-view" id="view-match" aria-labelledby="h-match">
+        <h2 class="p-h" id="h-match">Cross-reference</h2>
+        <p class="p-note">Paste a competitor part number. MSC Tools identifies the maker and returns MSC alternatives with the evidence: matched specs, price, lead time.</p>
+        <div class="brandbar" id="brandsMatch" aria-label="Preferred brands"></div>
+        <form class="matchin" id="matchForm">
+          <input id="matchIn" value="CM-2F340-0500-DEMO" aria-label="Competitor part number" autocomplete="off">
+          <button class="tbtn pri" type="submit" id="matchGo">Match</button>
+        </form>
+        <div id="matchOut" hidden></div>
+      </section>
+
+      <section class="p-view" id="view-crib" aria-labelledby="h-crib">
+        <h2 class="p-h" id="h-crib">Virtual crib</h2>
+        <p class="p-note">Named shop-inventory profiles: vending machines, cribs, or per-machine kits. Lines below minimum flag red and drive one-click reorders.</p>
+        <div class="cribhead">
+          <select id="cribSel" aria-label="Crib profile"></select>
+          <button class="tbtn" id="cribRename">Rename</button>
+          <button class="tbtn" id="cribNew">New profile</button>
+          <span class="spacer"></span>
+          <button class="tbtn" id="cribAdd">Add SKU</button>
+        </div>
+        <div id="cribForm"></div>
+        <div id="cribTbl"></div>
+        <button class="tbtn pri" id="poGo">Generate PO — MSC SKUs only</button>
+        <div id="poOut"></div>
+      </section>
+
+      <section class="p-view" id="view-library" aria-labelledby="h-lib">
+        <h2 class="p-h" id="h-lib">My Library</h2>
+        <p class="p-note">Every "Add to Library" lands here. One export writes tool geometry and material-matched presets to Autodesk Fusion or Autodesk Inventor.</p>
+        <div id="libList"></div>
+        <div class="exprow">
+          <select id="expFmt" aria-label="Export target">
+            <option value="fusion">Autodesk Fusion (.tools)</option>
+            <option value="inventor">Autodesk Inventor</option>
+          </select>
+          <button class="tbtn pri" id="libExport">Export</button>
+          <button class="tbtn" id="libToCart">Add all to cart</button>
+        </div>
+
+        <h3 class="p-lab">Import &amp; Match</h3>
+        <p class="p-note">Bring your current tooling, match every part number to an MSC equivalent, and price the whole set as a theoretical cart. Nothing is ordered by importing.</p>
+        <div class="brandbar" id="brandsXm" aria-label="Preferred brands"></div>
+        <div class="importrow">
+          <button class="tbtn pri" id="xmFusion">Load from Fusion library</button>
+          <button class="tbtn" id="xmInventor" disabled title="Available when the Inventor path is defined">Load from Inventor library</button>
+          <label class="tbtn filelab" for="xmFile">Import .tools / .csv<input type="file" id="xmFile" accept=".csv,.tools" hidden></label>
+          <button class="tbtn" id="xmGo">Load sample list</button>
+        </div>
+        <div class="xm-drop" id="xmDrop">Or drop a tool export here</div>
+        <div id="xmOut"></div>
+      </section>
+
+      <section class="p-view" id="view-cart" aria-labelledby="h-cart">
+        <h2 class="p-h" id="h-cart">Staging cart</h2>
+        <p class="p-note">A priced what-if. It becomes an order, a quote, or a CAM library only when you choose. Staging is explicit.</p>
+        <div id="cartList"></div>
+        <div id="cartExtras"></div>
+      </section>
+
+      <section class="p-view pdp" id="view-pdp" aria-label="Product page" hidden></section>
+
+    </main>
+
+  </div>
+
+  <footer class="p-cartbar" id="cartbar">
+    <img class="msc-logo-sm" src="assets/msc-logo-white.svg" alt="MSC" width="40" height="11">
+    <span class="lab">Staging cart</span>
+    <span class="val" id="barCount">0 items</span>
+    <span class="val" id="barTotal">$0.00</span>
+    <button id="barOpen">Review</button>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</div>
+
+<script src="js/state.js"></script>
+<script src="js/api.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
