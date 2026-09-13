@@ -1,6 +1,6 @@
 # MSC Tools — Tooling Advisor
 
-**Interactive prototype · MSC Tools, a sub-brand of MSC · v11 · September 2026**
+**Interactive prototype · MSC Tools, a sub-brand of MSC · v11.1 · September 2026**
 
 A working mock of a tooling-advisor application for CAM programmers: guided
 tool selection, competitor cross-reference, shop-crib inventory, Autodesk
@@ -9,7 +9,8 @@ show the end-to-end flow, not to pilot it. Every SKU, part number, price, stock
 count, account number, and document number is fictional, in realistic formats.
 A persistent **SIMULATED DATA** badge sits in the header.
 
-v11 applies the September 2026 refinement spec: brand palette and type scale,
+v11 applies the September 2026 refinement spec (v11.1 reworks Find as a
+tool-first advisor with a describe-the-feature path): brand palette and type scale,
 the official MSC logo, a narrow-first layout for a docked Fusion or Inventor
 palette, an in-panel product page modeled on mscdirect.com, inline forms in
 place of native dialogs, Autodesk-only export targets, and a data / mock-API /
@@ -67,38 +68,59 @@ states. No font network requests.
 
 ---
 
-## 3. Find — guided selection
+## 3. Find — the advisor
 
-**Purpose:** narrow the catalog to the right tools through four questions.
+**Purpose:** get from a job description to the right tool, whether or not the
+user can name the tool.
 
-**Flow.** A four-step wizard with a clickable step rail (arrow keys move
-between steps). Every value is user-entered; the app never reads part
-geometry or CAM features (§11).
+**Flow.** Four steps with a clickable step rail (arrow keys move between
+steps). Every value is user-entered; the app never reads part geometry or CAM
+features (§11).
 
-1. **Materials** — six ISO-group tiles (P Steel · M Stainless · K Cast iron ·
-   N Non-ferrous · S Superalloys/Ti · H Hardened). Multi-select.
-2. **Process** — six operation tiles with pictograms.
-3. **Preferred brands** — toggle chips (Accupro, Hertel, SGS, Niagara,
-   Kennametal, OSG) or "No preference". A shared setting; see §7.
-4. **Size & limits** — optional diameter, cut depth/LOC, corner radius, holder.
+1. **Material — "What are you cutting?"** Six ISO-group tiles (P Steel ·
+   M Stainless · K Cast iron · N Non-ferrous · S Superalloys/Ti · H Hardened).
+   Multi-select; the most conservative group governs.
+2. **Tool — "What tool do you need?"** Five tool-type tiles (end mill, ball end
+   mill, drill, tap, chamfer mill), each with a one-line "used for" hint. For
+   users who don't know, **"Not sure? Describe the feature"** offers pocket or
+   profile, slot, floor or face finish, 3D contour or fillet, hole, threaded
+   hole, edge break or countersink. Picking a feature selects the tool type
+   (and end style and flute count where relevant) and shows the reason in an
+   advice box: "Recommended: Ball end mill. Follows curved surfaces and inside
+   radii." The step rail marks the choice "recommended".
+3. **Geometry.** The fields change with the tool type: an end mill asks for
+   diameter, end style (square or corner radius), cut depth/LOC, flutes, and
+   holder; a drill for hole diameter, depth, coolant-through, holder; a tap for
+   thread size, hole type (blind or through), tap style, holder; a chamfer mill
+   for included angle and max chamfer width. **Every field is optional** and
+   carries a recommendation derived from the material and feature ("4 flutes —
+   balance of rigidity and chip room for steel"; "coolant-through recommended
+   past 3× diameter"; "spiral flute — pulls chips up and out of a blind
+   hole"). Blank fields use the recommended value.
+4. **Preferred brands** — toggle chips or "No preference". A shared setting;
+   see §7.
 
 Under the wizard, **Know the MSC #?** opens a product page directly, with a
 **recent searches** row of the last five lookups.
 
 **Results logic.**
 
-- The result set is chosen per material using the **most conservative group
-  selected** (priority H → S → K → M → P → N). When more than one material is
-  selected, the results header states which group governs.
-- **"Top 3 of 127"** with a sort control (best fit · lowest price · fastest)
-  and a Cards / Compare toggle. In the docked layout the comparison collapses
-  to stacked spec cards; undocked, it is a spec-by-spec table.
+- Result sets are keyed by **tool type, then governing ISO group**, so a drill
+  search returns drills and a tap search returns taps, each with coatings
+  that make sense for the material (§9).
+- The header reads, for example, **"Ø .500 end mills for ISO N + P — ISO P
+  (Steel) governs"**, followed by **"Recommended values used: 4 flutes
+  (balance of rigidity and chip room for steel)"** whenever a blank field was
+  filled by the advisor, so the user always sees what was assumed.
+- Sort control (best fit · lowest price · fastest) and a Cards / Compare
+  toggle. Docked, the comparison collapses to stacked spec cards; undocked, it
+  is a spec-by-spec table.
 - Preferred brands are starred and rank first; the chosen sort applies within.
-- **"See all 127 results"** expands compact rows in batches of six; when the
-  demo's rows are exhausted a note reads "Tighten size or process to narrow
-  the list."
+- End mills carry a long tail: **"See all 127 results"** expands compact rows
+  in batches of six, ending in "Tighten size or geometry to narrow the list."
 - Every result offers **+ Library** and **+ Cart**; its name or image opens
-  the product page.
+  the product page. Tap product pages list the matching tap drill under
+  "Often bought with".
 
 ---
 
@@ -200,8 +222,8 @@ focus ring.
 
 ## 8. Product page ("PDP light")
 
-A registry of **29 fictional products** (23 cutting tools plus a holder,
-collets, and a cutting fluid) backs the app. Clicking any product's name or
+A registry of **41 fictional products** (end mills, ball end mills, drills,
+taps, chamfer mills, plus a holder, collets, and a cutting fluid) backs the app. Clicking any product's name or
 image — Find cards, compare columns, expanded rows, Match alternatives, Library
 items, cart lines, Crib SKU cells, recent-search chips, or the header search —
 opens the product page as a full-height in-panel view with **← Back to
@@ -237,9 +259,17 @@ TiCN blue-grey, ZrN pale gold, bright carbide) and silhouettes per tool type.
 
 ## 9. Material and parameter logic
 
-**Coating correctness.** Result sets are chosen so coatings make metallurgical
-sense: N — ZrN or polished uncoated, never AlTiN; P — AlTiN, TiAlN, TiCN;
-M — AlTiN, TiAlN; K — TiCN, AlTiN, uncoated roughers; S and H — AlTiN, TiAlN.
+**Coating correctness.** Result sets are chosen per tool type so coatings make
+metallurgical sense: N — ZrN or polished uncoated, never AlTiN; P — AlTiN,
+TiAlN, TiCN; M — AlTiN, TiAlN; K — TiCN, AlTiN, uncoated roughers; S and H —
+AlTiN, TiAlN. Taps follow the same idea: forming taps for aluminum, spiral
+flute for blind holes, spiral point for through holes, powder-metal TiAlN for
+stainless and superalloys.
+
+**Advisor recommendations** (`recommend` in `data/catalog.json`): flute count
+by group (N 3 · P/M/K 4 · S 5 · H 6), tap style by hole type and material,
+coolant-through past 3× diameter, and per-feature overrides (a slot
+recommends 3 flutes for chip room; a floor finish recommends 6).
 
 **Governing group.** With multiple materials selected, presets and coatings
 follow the most conservative group, priority H → S → K → M → P → N. The
@@ -250,8 +280,8 @@ results header states which group is governing.
 ```
 RPM       = SFM × 3.82 ÷ cut diameter          (rounded to 10s)
 chip load = 0.0008 + diameter × 0.0028          (inches/tooth)
-feed IPM  = RPM × flutes × chip load
-SFM table = N 900 · K 300 · P 350 · M 240 · H 150 · S 120  (drills lower)
+feed IPM  = RPM × flutes × chip load            (taps: RPM ÷ TPI)
+SFM table = N 900 · K 300 · P 350 · M 240 · H 150 · S 120  (drills and taps lower)
 ```
 
 ---
@@ -259,7 +289,7 @@ SFM table = N 900 · K 300 · P 350 · M 240 · H 150 · S 120  (drills lower)
 ## 10. Simulated-data policy
 
 - **Account:** `#0000-DEMO`, "Bay 2 crib ✓ connected"
-- **MSC SKUs:** fictional `0999xxxx` range (29 products)
+- **MSC SKUs:** fictional `0999xxxx` range (41 products)
 - **Competitor / document part numbers:** invented formats
   (`CM-2F340-0500-DEMO`, `GEN-EM-500-4F`, `SUP-BN-375`, `CUSTOM-FORM-12`)
 - **Document numbers:** `PO-2026-MMDD-DEMO`, `Q-2026-04xx`, `SO-2026-07xx`,
@@ -299,7 +329,8 @@ js/api.js               mock API layer: catalog.search/detail/lookup/crossRef/al
                         draftPO/sendPO, fusion.readLibrary/writeLibrary, inventor.readLibrary/writeLibrary,
                         files.parseToolList
 js/app.js               views and interactions (vanilla JS, no dependencies)
-data/catalog.json       product registry, result sets, SFM tables, "often bought with" map
+data/catalog.json       product registry, result sets by tool type and material, tool types, feature
+                        advisor map, recommendations, SFM tables, "often bought with" map
 data/match.json         reference part, fit table, ranked alternative lists
 data/cribs.json         crib profiles
 data/imports.json       Fusion-library and sample-file import fixtures
@@ -324,9 +355,12 @@ Hard-refresh (Ctrl/Cmd+Shift+R) after pushing; Pages caches aggressively.
 
 ## 13. Suggested walkthrough
 
-1. **Find** — select Aluminum, then add Steel and watch the header say ISO P
-   governs. Flip Cards / Compare, sort by price, expand "See all," open a
-   product page from a card, then open an alternative from that page.
+1. **Find** — select Steel, then on the tool step click **Threaded hole**
+   under "Not sure?" and read the recommendation. Leave geometry blank, see
+   results, and point out "Recommended values used: spiral flute". Open the
+   tap's product page and show the tap drill under Often bought with. New
+   search: Aluminum + Steel, End mill, and watch the header say ISO P governs;
+   flip Cards / Compare and expand "See all".
 2. **Match** — run the pre-filled part number, point out the reference card and
    the savings chips, toggle two alternatives into Compare, add your own MSC #
    as a third column.
