@@ -1,0 +1,147 @@
+{
+ "sample": {
+  "label": "sample_tools.csv",
+  "rows": [
+   {
+    "theirs": "CM-2F340-0500",
+    "tname": "OEM 1/2\" 4FL end mill",
+    "tprice": 89.4,
+    "alts": [
+     {
+      "sku": "09990412",
+      "fit": 96
+     },
+     {
+      "sku": "09990627",
+      "fit": 93
+     }
+    ]
+   },
+   {
+    "theirs": "CM-1P330-0250",
+    "tname": "OEM 1/4\" 3FL end mill",
+    "tprice": 64.15,
+    "alts": [
+     {
+      "sku": "09990455",
+      "fit": 95
+     }
+    ]
+   },
+   {
+    "theirs": "DR-870-0201",
+    "tname": "OEM #7 carbide drill",
+    "tprice": 71.2,
+    "alts": [
+     {
+      "sku": "09990118",
+      "fit": 94
+     },
+     {
+      "sku": "09990904",
+      "fit": 91
+     }
+    ]
+   },
+   {
+    "theirs": "TM-4F125-0750",
+    "tname": "OEM 3/4\" 4FL rougher",
+    "tprice": 136.45,
+    "alts": [
+     {
+      "sku": "09991177",
+      "fit": 92
+     },
+     {
+      "sku": "09990619",
+      "fit": 90
+     }
+    ]
+   },
+   {
+    "theirs": "CUSTOM-GRIND-77",
+    "tname": "Custom form tool (shop grind)",
+    "tprice": null,
+    "unmatched": true
+   }
+  ]
+ },
+ "fusion": {
+  "label": "this document's Fusion tool library",
+  "rows": [
+   {
+    "theirs": "T1 · GEN-EM-500-4F",
+    "tname": "Generic 1/2\" 4FL end mill · doc tool",
+    "tprice": 96.0,
+    "alts": [
+     {
+      "sku": "09990412",
+      "fit": 97
+     },
+     {
+      "sku": "09990627",
+      "fit": 94
+     }
+    ]
+   },
+   {
+    "theirs": "T2 · SUP-BN-375",
+    "tname": "Supplier 3/8\" ball nose · doc tool",
+    "tprice": 44.1,
+    "alts": [
+     {
+      "sku": "09990840",
+      "fit": 95
+     }
+    ]
+   },
+   {
+    "theirs": "T3 · GEN-DR-201",
+    "tname": "Generic #7 drill · doc tool",
+    "tprice": 61.75,
+    "alts": [
+     {
+      "sku": "09990118",
+      "fit": 96
+     },
+     {
+      "sku": "09990904",
+      "fit": 92
+     }
+    ]
+   },
+   {
+    "theirs": "T4 · SUP-CH-90",
+    "tname": "Supplier 90° chamfer mill · doc tool",
+    "tprice": 71.3,
+    "alts": [
+     {
+      "sku": "09990233",
+      "fit": 93
+     }
+    ]
+   },
+   {
+    "theirs": "T5 · GEN-EM-750-R",
+    "tname": "Generic 3/4\" rougher · doc tool",
+    "tprice": 104.5,
+    "alts": [
+     {
+      "sku": "09991177",
+      "fit": 91
+     },
+     {
+      "sku": "09990619",
+      "fit": 90
+     }
+    ]
+   },
+   {
+    "theirs": "T6 · CUSTOM-FORM-12",
+    "tname": "Custom form tool · doc tool",
+    "tprice": null,
+    "unmatched": true
+   }
+  ]
+ }
+}

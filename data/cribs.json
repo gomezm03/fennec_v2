@@ -1,0 +1,68 @@
+[
+ {
+  "name": "Bay 2 — Haas VF-2",
+  "lines": [
+   {
+    "sku": "09990412",
+    "name": "Accupro 1/2\" 4FL End Mill",
+    "on": 2,
+    "min": 4,
+    "msc": true,
+    "price": 84.12
+   },
+   {
+    "sku": "09990101",
+    "name": "Hertel 1/4\" Jobber Drill — TiN",
+    "on": 6,
+    "min": 3,
+    "msc": true,
+    "price": 12.4
+   },
+   {
+    "sku": "X-77-0455",
+    "name": "Legacy-brand 3/8-16 Spiral Tap",
+    "on": 1,
+    "min": 2,
+    "msc": false,
+    "price": 0
+   },
+   {
+    "sku": "09990233",
+    "name": "Accupro 90° Chamfer Mill",
+    "on": 5,
+    "min": 2,
+    "msc": true,
+    "price": 54.2
+   }
+  ]
+ },
+ {
+  "name": "Bay 1 — DMG Mori",
+  "lines": [
+   {
+    "sku": "09990627",
+    "name": "Hertel 1/2\" 4FL End Mill",
+    "on": 3,
+    "min": 3,
+    "msc": true,
+    "price": 61.3
+   },
+   {
+    "sku": "09990840",
+    "name": "Accupro 3/8\" Ball End Mill",
+    "on": 1,
+    "min": 3,
+    "msc": true,
+    "price": 47.75
+   },
+   {
+    "sku": "X-19-2210",
+    "name": "Legacy-brand Spot Drill 120°",
+    "on": 4,
+    "min": 2,
+    "msc": false,
+    "price": 0
+   }
+  ]
+ }
+]

@@ -1,0 +1,1627 @@
+{
+ "total": 127,
+ "resultSets": {
+  "endmill": {
+   "N": [
+    [
+     "09991104",
+     96
+    ],
+    [
+     "09991301",
+     94
+    ],
+    [
+     "09990981",
+     92
+    ]
+   ],
+   "P": [
+    [
+     "09990412",
+     96
+    ],
+    [
+     "09990627",
+     93
+    ],
+    [
+     "09991172",
+     90
+    ]
+   ],
+   "M": [
+    [
+     "09990412",
+     95
+    ],
+    [
+     "09990627",
+     93
+    ],
+    [
+     "09991488",
+     91
+    ]
+   ],
+   "K": [
+    [
+     "09991172",
+     94
+    ],
+    [
+     "09990412",
+     92
+    ],
+    [
+     "09991701",
+     89
+    ]
+   ],
+   "S": [
+    [
+     "09990412",
+     93
+    ],
+    [
+     "09990627",
+     91
+    ],
+    [
+     "09991512",
+     89
+    ]
+   ],
+   "H": [
+    [
+     "09990412",
+     92
+    ],
+    [
+     "09991488",
+     90
+    ],
+    [
+     "09990627",
+     88
+    ]
+   ]
+  },
+  "ball": {
+   "N": [
+    [
+     "09990847",
+     96
+    ],
+    [
+     "09990840",
+     90
+    ]
+   ],
+   "P": [
+    [
+     "09990854",
+     95
+    ],
+    [
+     "09990840",
+     92
+    ]
+   ],
+   "M": [
+    [
+     "09990854",
+     94
+    ],
+    [
+     "09990840",
+     91
+    ]
+   ],
+   "K": [
+    [
+     "09990854",
+     93
+    ],
+    [
+     "09990840",
+     90
+    ]
+   ],
+   "S": [
+    [
+     "09990854",
+     92
+    ],
+    [
+     "09990840",
+     89
+    ]
+   ],
+   "H": [
+    [
+     "09990854",
+     92
+    ],
+    [
+     "09990840",
+     88
+    ]
+   ]
+  },
+  "drill": {
+   "N": [
+    [
+     "09990140",
+     96
+    ],
+    [
+     "09990904",
+     92
+    ],
+    [
+     "09990101",
+     85
+    ]
+   ],
+   "P": [
+    [
+     "09990125",
+     96
+    ],
+    [
+     "09990133",
+     93
+    ],
+    [
+     "09990118",
+     90
+    ]
+   ],
+   "M": [
+    [
+     "09990133",
+     95
+    ],
+    [
+     "09990125",
+     92
+    ],
+    [
+     "09990118",
+     88
+    ]
+   ],
+   "K": [
+    [
+     "09990125",
+     94
+    ],
+    [
+     "09990133",
+     92
+    ],
+    [
+     "09990118",
+     89
+    ]
+   ],
+   "S": [
+    [
+     "09990133",
+     95
+    ],
+    [
+     "09990125",
+     90
+    ],
+    [
+     "09990904",
+     86
+    ]
+   ],
+   "H": [
+    [
+     "09990133",
+     93
+    ],
+    [
+     "09990125",
+     90
+    ],
+    [
+     "09990904",
+     85
+    ]
+   ]
+  },
+  "tap": {
+   "N": [
+    [
+     "09990315",
+     96
+    ],
+    [
+     "09990308",
+     93
+    ],
+    [
+     "09990301",
+     90
+    ]
+   ],
+   "P": [
+    [
+     "09990301",
+     96
+    ],
+    [
+     "09990308",
+     94
+    ],
+    [
+     "09990315",
+     89
+    ]
+   ],
+   "M": [
+    [
+     "09990322",
+     96
+    ],
+    [
+     "09990301",
+     91
+    ],
+    [
+     "09990308",
+     88
+    ]
+   ],
+   "K": [
+    [
+     "09990308",
+     95
+    ],
+    [
+     "09990301",
+     92
+    ],
+    [
+     "09990322",
+     88
+    ]
+   ],
+   "S": [
+    [
+     "09990322",
+     96
+    ],
+    [
+     "09990301",
+     88
+    ],
+    [
+     "09990308",
+     84
+    ]
+   ],
+   "H": [
+    [
+     "09990322",
+     93
+    ],
+    [
+     "09990301",
+     87
+    ],
+    [
+     "09990308",
+     82
+    ]
+   ]
+  },
+  "chamfer": {
+   "N": [
+    [
+     "09990240",
+     96
+    ],
+    [
+     "09990233",
+     91
+    ],
+    [
+     "09990247",
+     88
+    ]
+   ],
+   "P": [
+    [
+     "09990233",
+     96
+    ],
+    [
+     "09990247",
+     92
+    ],
+    [
+     "09990240",
+     86
+    ]
+   ],
+   "M": [
+    [
+     "09990233",
+     95
+    ],
+    [
+     "09990247",
+     92
+    ],
+    [
+     "09990240",
+     84
+    ]
+   ],
+   "K": [
+    [
+     "09990233",
+     94
+    ],
+    [
+     "09990247",
+     91
+    ],
+    [
+     "09990240",
+     86
+    ]
+   ],
+   "S": [
+    [
+     "09990247",
+     94
+    ],
+    [
+     "09990233",
+     92
+    ],
+    [
+     "09990240",
+     80
+    ]
+   ],
+   "H": [
+    [
+     "09990233",
+     93
+    ],
+    [
+     "09990247",
+     91
+    ],
+    [
+     "09990240",
+     80
+    ]
+   ]
+  }
+ },
+ "totals": {
+  "endmill": 127,
+  "ball": 38,
+  "drill": 64,
+  "tap": 41,
+  "chamfer": 22
+ },
+ "toolTypes": [
+  {
+   "id": "endmill",
+   "name": "End mill",
+   "plural": "end mills",
+   "sub": "Pockets, profiles, slots, floors"
+  },
+  {
+   "id": "ball",
+   "name": "Ball end mill",
+   "plural": "ball end mills",
+   "sub": "3D contours, fillets"
+  },
+  {
+   "id": "drill",
+   "name": "Drill",
+   "plural": "drills",
+   "sub": "Holes, spot and pilot"
+  },
+  {
+   "id": "tap",
+   "name": "Tap",
+   "plural": "taps",
+   "sub": "Threaded holes"
+  },
+  {
+   "id": "chamfer",
+   "name": "Chamfer mill",
+   "plural": "chamfer mills",
+   "sub": "Edge breaks, countersinks"
+  }
+ ],
+ "features": [
+  {
+   "id": "pocket",
+   "label": "Pocket or profile",
+   "tool": "endmill",
+   "end": "square",
+   "why": "Square end mill — flat floors and straight walls"
+  },
+  {
+   "id": "slot",
+   "label": "Slot",
+   "tool": "endmill",
+   "end": "square",
+   "fl": "3",
+   "why": "Square end mill with fewer flutes — room for chips in a full-width cut"
+  },
+  {
+   "id": "floor",
+   "label": "Floor or face finish",
+   "tool": "endmill",
+   "end": "square",
+   "fl": "6",
+   "why": "High-flute end mill — finer finish at the same feed"
+  },
+  {
+   "id": "contour",
+   "label": "3D contour or fillet",
+   "tool": "ball",
+   "end": "ball",
+   "why": "Ball end mill — follows curved surfaces and inside radii"
+  },
+  {
+   "id": "hole",
+   "label": "Hole",
+   "tool": "drill",
+   "why": "Drill — size to the hole; add a reamer for tight tolerance"
+  },
+  {
+   "id": "thread",
+   "label": "Threaded hole",
+   "tool": "tap",
+   "why": "Tap — sized to the thread; the drill for the pilot hole is listed with it"
+  },
+  {
+   "id": "edge",
+   "label": "Edge break or countersink",
+   "tool": "chamfer",
+   "why": "Chamfer mill — one tool for edge breaks, countersinks and deburring"
+  }
+ ],
+ "recommend": {
+  "flutes": {
+   "N": "3",
+   "P": "4",
+   "M": "4",
+   "K": "4",
+   "S": "5",
+   "H": "6"
+  },
+  "fluteWhy": {
+   "N": "chip room for aluminum",
+   "P": "balance of rigidity and chip room for steel",
+   "M": "rigidity for stainless",
+   "K": "rigidity for cast iron",
+   "S": "more edges at low speed for superalloys",
+   "H": "more edges at low speed for hardened steel"
+  },
+  "tapStyle": {
+   "blind": "Spiral flute",
+   "through": "Spiral point"
+  },
+  "tapStyleN": "Forming",
+  "coolantDepth": 3
+ },
+ "moreSkus": {
+  "endmill": [
+   "09991104",
+   "09991245",
+   "09991301",
+   "09991377",
+   "09991420",
+   "09991488",
+   "09991512",
+   "09991590",
+   "09991633",
+   "09991701",
+   "09991766"
+  ]
+ },
+ "sfm": {
+  "N": 900,
+  "P": 350,
+  "M": 240,
+  "K": 300,
+  "S": 120,
+  "H": 150
+ },
+ "drillSfm": {
+  "N": 300,
+  "P": 90,
+  "M": 70,
+  "K": 100,
+  "S": 40,
+  "H": 50
+ },
+ "tapSfm": {
+  "N": 60,
+  "P": 35,
+  "M": 20,
+  "K": 40,
+  "S": 10,
+  "H": 12
+ },
+ "groupNames": {
+  "N": "Aluminum",
+  "P": "Steel",
+  "M": "Stainless",
+  "K": "Cast iron",
+  "S": "Superalloy / Ti",
+  "H": "Hardened"
+ },
+ "groupPriority": [
+  "H",
+  "S",
+  "K",
+  "M",
+  "P",
+  "N"
+ ],
+ "oftenWith": {
+  "3/8-16": [
+   "09990160",
+   "09995001",
+   "09995100"
+  ],
+  "1/2": [
+   "09995001",
+   "09995012",
+   "09995100"
+  ],
+  "1/4": [
+   "09995001",
+   "09995013",
+   "09995100"
+  ],
+  "3/8": [
+   "09995001",
+   "09995014",
+   "09995100"
+  ],
+  "3/4": [
+   "09995001",
+   "09995015",
+   "09995100"
+  ],
+  ".201": [
+   "09995001",
+   "09995013",
+   "09995100"
+  ]
+ },
+ "products": [
+  {
+   "sku": "09990412",
+   "brand": "Accupro",
+   "title": "1/2\" 4-Flute Carbide Square End Mill — AlTiN",
+   "kind": "endmill",
+   "coat": "altin",
+   "coatName": "AlTiN",
+   "price": 84.12,
+   "stock": 143,
+   "lead": "Next day",
+   "desc": "3\" OAL, 1/2\" shank dia, 38° helix, AlTiN coated, single end, centercutting",
+   "diaDec": 0.5,
+   "dia": "1/2",
+   "fl": "4",
+   "loc": "1-1/4",
+   "locDec": 1.25,
+   "shank": "1/2",
+   "oal": "3",
+   "helix": "38°",
+   "series": "ACC4-SQ",
+   "mfr": "ACC4-SQ-0412"
+  },
+  {
+   "sku": "09990627",
+   "brand": "Hertel",
+   "title": "1/2\" 4-Flute Carbide Square End Mill — TiAlN",
+   "kind": "endmill",
+   "coat": "tialn",
+   "coatName": "TiAlN",
+   "price": 61.3,
+   "stock": 88,
+   "lead": "Next day",
+   "desc": "2-1/2\" OAL, 1/2\" shank dia, 35° helix, TiAlN coated, single end, centercutting",
+   "diaDec": 0.5,
+   "dia": "1/2",
+   "fl": "4",
+   "loc": "1",
+   "locDec": 1.0,
+   "shank": "1/2",
+   "oal": "2-1/2",
+   "helix": "35°",
+   "series": "HTL-GP4",
+   "mfr": "HTL-GP4-0627"
+  },
+  {
+   "sku": "09990981",
+   "brand": "OSG",
+   "title": "1/2\" 5-Flute Carbide End Mill — Bright",
+   "kind": "endmill",
+   "coat": "bright",
+   "coatName": "Bright/Uncoated",
+   "price": 97.45,
+   "stock": 12,
+   "lead": "2-day",
+   "desc": "3\" OAL, 1/2\" shank dia, variable 45° helix, .015\" corner radius, single end",
+   "diaDec": 0.5,
+   "dia": "1/2",
+   "fl": "5",
+   "loc": "1-1/4",
+   "locDec": 1.25,
+   "shank": "1/2",
+   "oal": "3",
+   "helix": "45° variable",
+   "series": "VGM5",
+   "mfr": "VGM5-0981",
+   "radius": ".015"
+  },
+  {
+   "sku": "09991172",
+   "brand": "Niagara",
+   "title": "1/2\" 4-Flute Square End Mill — TiCN",
+   "kind": "endmill",
+   "coat": "ticn",
+   "coatName": "TiCN",
+   "price": 71.88,
+   "stock": 51,
+   "lead": "Next day",
+   "desc": "3\" OAL, 1/2\" shank dia, 30° helix, TiCN coated, single end, centercutting",
+   "diaDec": 0.5,
+   "dia": "1/2",
+   "fl": "4",
+   "loc": "1-1/4",
+   "locDec": 1.25,
+   "shank": "1/2",
+   "oal": "3",
+   "helix": "30°",
+   "series": "N85907",
+   "mfr": "N85907-1172"
+  },
+  {
+   "sku": "09990455",
+   "brand": "Accupro",
+   "title": "1/4\" 3-Flute Carbide End Mill — ZrN",
+   "kind": "endmill",
+   "coat": "zrn",
+   "coatName": "ZrN",
+   "price": 41.05,
+   "stock": 210,
+   "lead": "Next day",
+   "desc": "2-1/2\" OAL, 1/4\" shank dia, 40° helix, ZrN coated aluminum-spec geometry, single end",
+   "diaDec": 0.25,
+   "dia": "1/4",
+   "fl": "3",
+   "loc": "3/4",
+   "locDec": 0.75,
+   "shank": "1/4",
+   "oal": "2-1/2",
+   "helix": "40°",
+   "series": "ACC3-AL",
+   "mfr": "ACC3-AL-0455"
+  },
+  {
+   "sku": "09990118",
+   "brand": "Hertel",
+   "title": "#7 (.201\") Carbide Jobber Drill — TiN",
+   "kind": "drill",
+   "coat": "tin",
+   "coatName": "TiN",
+   "price": 38.91,
+   "stock": 96,
+   "lead": "Next day",
+   "desc": "3.6\" OAL, 118° point, right hand spiral flute, TiN coated",
+   "diaDec": 0.201,
+   "dia": "#7 (.201)",
+   "fl": "2",
+   "loc": "2.16 flute",
+   "locDec": 2.16,
+   "shank": ".201",
+   "oal": "3.6",
+   "helix": "118° point",
+   "series": "HTL-JD",
+   "mfr": "HTL-JD-0118"
+  },
+  {
+   "sku": "09990904",
+   "brand": "OSG",
+   "title": "#7 (.201\") Carbide Drill — Bright",
+   "kind": "drill",
+   "coat": "bright",
+   "coatName": "Bright/Uncoated",
+   "price": 52.1,
+   "stock": 33,
+   "lead": "Next day",
+   "desc": "3.5\" OAL, 140° point, coolant-through, right hand spiral",
+   "diaDec": 0.201,
+   "dia": "#7 (.201)",
+   "fl": "2",
+   "loc": "2.0 flute",
+   "locDec": 2.0,
+   "shank": ".201",
+   "oal": "3.5",
+   "helix": "140° point",
+   "series": "EXO-DRL",
+   "mfr": "EXO-DRL-0904"
+  },
+  {
+   "sku": "09991177",
+   "brand": "Niagara",
+   "title": "3/4\" 4-Flute Carbide Rougher — TiCN",
+   "kind": "endmill",
+   "coat": "ticn",
+   "coatName": "TiCN",
+   "price": 60.3,
+   "stock": 27,
+   "lead": "Next day",
+   "desc": "4\" OAL, 3/4\" shank dia, corncob chipbreaker profile, single end",
+   "diaDec": 0.75,
+   "dia": "3/4",
+   "fl": "4",
+   "loc": "1-1/2",
+   "locDec": 1.5,
+   "shank": "3/4",
+   "oal": "4",
+   "helix": "35°",
+   "series": "NRC4",
+   "mfr": "NRC4-1177"
+  },
+  {
+   "sku": "09990619",
+   "brand": "Accupro",
+   "title": "3/4\" 4-Flute Carbide End Mill — AlTiN",
+   "kind": "endmill",
+   "coat": "altin",
+   "coatName": "AlTiN",
+   "price": 78.12,
+   "stock": 44,
+   "lead": "Next day",
+   "desc": "4\" OAL, 3/4\" shank dia, 38° helix, AlTiN coated, single end, centercutting",
+   "diaDec": 0.75,
+   "dia": "3/4",
+   "fl": "4",
+   "loc": "1-1/2",
+   "locDec": 1.5,
+   "shank": "3/4",
+   "oal": "4",
+   "helix": "38°",
+   "series": "ACC4-SQ",
+   "mfr": "ACC4-SQ-0619"
+  },
+  {
+   "sku": "09990101",
+   "brand": "Hertel",
+   "title": "1/4\" Jobber Length Drill — TiN",
+   "kind": "drill",
+   "coat": "tin",
+   "coatName": "TiN",
+   "price": 12.4,
+   "stock": 340,
+   "lead": "Next day",
+   "desc": "4\" OAL, 118° point, right hand spiral flute, TiN coated HSS",
+   "diaDec": 0.25,
+   "dia": "1/4",
+   "fl": "2",
+   "loc": "2.75 flute",
+   "locDec": 2.75,
+   "shank": "1/4",
+   "oal": "4",
+   "helix": "118° point",
+   "series": "HTL-JD",
+   "mfr": "HTL-JD-0101",
+   "material": "High Speed Steel"
+  },
+  {
+   "sku": "09990233",
+   "brand": "Accupro",
+   "title": "90° 4-Flute Carbide Chamfer Mill — AlTiN",
+   "kind": "chamfer",
+   "coat": "altin",
+   "coatName": "AlTiN",
+   "price": 54.2,
+   "stock": 58,
+   "lead": "Next day",
+   "desc": "2-1/2\" OAL, 1/2\" shank dia, 90° included angle, AlTiN coated",
+   "diaDec": 0.5,
+   "dia": "1/2",
+   "fl": "4",
+   "loc": "1/4",
+   "locDec": 0.25,
+   "shank": "1/2",
+   "oal": "2-1/2",
+   "helix": "90° incl.",
+   "series": "ACC-CHM",
+   "mfr": "ACC-CHM-0233"
+  },
+  {
+   "sku": "09990840",
+   "brand": "Accupro",
+   "title": "3/8\" 2-Flute Carbide Ball End Mill — AlTiN",
+   "kind": "ball",
+   "coat": "altin",
+   "coatName": "AlTiN",
+   "price": 47.75,
+   "stock": 71,
+   "lead": "Next day",
+   "desc": "2-1/2\" OAL, 3/8\" shank dia, 30° helix, ball nose, AlTiN coated, single end",
+   "diaDec": 0.375,
+   "dia": "3/8",
+   "fl": "2",
+   "loc": "1",
+   "locDec": 1.0,
+   "shank": "3/8",
+   "oal": "2-1/2",
+   "helix": "30°",
+   "series": "ACC2-BN",
+   "mfr": "ACC2-BN-0840"
+  },
+  {
+   "sku": "09991104",
+   "brand": "SGS",
+   "title": "1/2\" 3FL Alum-spec End Mill — ZrN",
+   "kind": "endmill",
+   "coat": "zrn",
+   "coatName": "ZrN",
+   "price": 72.88,
+   "stock": 24,
+   "lead": "Next day",
+   "desc": "3\" OAL, 1/2\" shank dia, solid carbide, single end, centercutting",
+   "diaDec": 0.5,
+   "dia": "1/2",
+   "fl": "3",
+   "loc": "1-1/4",
+   "locDec": 1.25,
+   "shank": "1/2",
+   "oal": "3",
+   "helix": "38°",
+   "series": "SGS-Z3",
+   "mfr": "SGS-Z3-1104"
+  },
+  {
+   "sku": "09991245",
+   "brand": "Kennametal",
+   "title": "1/2\" 4FL HARVI I TE — AlTiN",
+   "kind": "endmill",
+   "coat": "altin",
+   "coatName": "AlTiN",
+   "price": 118.6,
+   "stock": 65,
+   "lead": "Next day",
+   "desc": "3\" OAL, 1/2\" shank dia, solid carbide, single end, centercutting",
+   "diaDec": 0.5,
+   "dia": "1/2",
+   "fl": "4",
+   "loc": "1-1/4",
+   "locDec": 1.25,
+   "shank": "1/2",
+   "oal": "3",
+   "helix": "38°",
+   "series": "HARVI-TE",
+   "mfr": "HARVI-TE-1245"
+  },
+  {
+   "sku": "09991301",
+   "brand": "Accupro",
+   "title": "1/2\" 2FL Carbide End Mill — Uncoated",
+   "kind": "endmill",
+   "coat": "bright",
+   "coatName": "Bright/Uncoated",
+   "price": 48.95,
+   "stock": 21,
+   "lead": "Next day",
+   "desc": "3\" OAL, 1/2\" shank dia, solid carbide, single end, centercutting",
+   "diaDec": 0.5,
+   "dia": "1/2",
+   "fl": "2",
+   "loc": "1-1/4",
+   "locDec": 1.25,
+   "shank": "1/2",
+   "oal": "3",
+   "helix": "38°",
+   "series": "ACC2-SQ",
+   "mfr": "ACC2-SQ-1301"
+  },
+  {
+   "sku": "09991377",
+   "brand": "Hertel",
+   "title": "1/2\" 4FL Long-reach End Mill — TiAlN",
+   "kind": "endmill",
+   "coat": "tialn",
+   "coatName": "TiAlN",
+   "price": 79.4,
+   "stock": 97,
+   "lead": "Next day",
+   "desc": "3\" OAL, 1/2\" shank dia, solid carbide, single end, centercutting",
+   "diaDec": 0.5,
+   "dia": "1/2",
+   "fl": "4",
+   "loc": "1-1/4",
+   "locDec": 1.25,
+   "shank": "1/2",
+   "oal": "3",
+   "helix": "38°",
+   "series": "HTL-LR4",
+   "mfr": "HTL-LR4-1377"
+  },
+  {
+   "sku": "09991420",
+   "brand": "OSG",
+   "title": "1/2\" 4FL Corner-radius .030 — Bright",
+   "kind": "endmill",
+   "coat": "bright",
+   "coatName": "Bright/Uncoated",
+   "price": 102.15,
+   "stock": 40,
+   "lead": "Next day",
+   "desc": "3\" OAL, 1/2\" shank dia, solid carbide, single end, centercutting",
+   "diaDec": 0.5,
+   "dia": "1/2",
+   "fl": "4",
+   "loc": "1-1/4",
+   "locDec": 1.25,
+   "shank": "1/2",
+   "oal": "3",
+   "helix": "38°",
+   "series": "OSG-CR4",
+   "mfr": "OSG-CR4-1420"
+  },
+  {
+   "sku": "09991488",
+   "brand": "Niagara",
+   "title": "1/2\" 6FL Finisher — AlTiN",
+   "kind": "endmill",
+   "coat": "altin",
+   "coatName": "AlTiN",
+   "price": 94.7,
+   "stock": 108,
+   "lead": "Next day",
+   "desc": "3\" OAL, 1/2\" shank dia, solid carbide, single end, centercutting",
+   "diaDec": 0.5,
+   "dia": "1/2",
+   "fl": "6",
+   "loc": "1-1/4",
+   "locDec": 1.25,
+   "shank": "1/2",
+   "oal": "3",
+   "helix": "38°",
+   "series": "N-FIN6",
+   "mfr": "N-FIN6-1488"
+  },
+  {
+   "sku": "09991512",
+   "brand": "SGS",
+   "title": "1/2\" 3FL High-helix — Ti-Namite",
+   "kind": "endmill",
+   "coat": "tin",
+   "coatName": "Ti-Namite",
+   "price": 81.25,
+   "stock": 32,
+   "lead": "Next day",
+   "desc": "3\" OAL, 1/2\" shank dia, solid carbide, single end, centercutting",
+   "diaDec": 0.5,
+   "dia": "1/2",
+   "fl": "3",
+   "loc": "1-1/4",
+   "locDec": 1.25,
+   "shank": "1/2",
+   "oal": "3",
+   "helix": "38°",
+   "series": "SGS-HH3",
+   "mfr": "SGS-HH3-1512"
+  },
+  {
+   "sku": "09991590",
+   "brand": "Accupro",
+   "title": "1/2\" 4FL Stub-length — AlTiN",
+   "kind": "endmill",
+   "coat": "altin",
+   "coatName": "AlTiN",
+   "price": 69.85,
+   "stock": 110,
+   "lead": "Next day",
+   "desc": "3\" OAL, 1/2\" shank dia, solid carbide, single end, centercutting",
+   "diaDec": 0.5,
+   "dia": "1/2",
+   "fl": "4",
+   "loc": "1-1/4",
+   "locDec": 1.25,
+   "shank": "1/2",
+   "oal": "3",
+   "helix": "38°",
+   "series": "ACC4-ST",
+   "mfr": "ACC4-ST-1590"
+  },
+  {
+   "sku": "09991633",
+   "brand": "Kennametal",
+   "title": "1/2\" 4FL GOmill GP — TiAlN",
+   "kind": "endmill",
+   "coat": "tialn",
+   "coatName": "TiAlN",
+   "price": 88.3,
+   "stock": 53,
+   "lead": "Next day",
+   "desc": "3\" OAL, 1/2\" shank dia, solid carbide, single end, centercutting",
+   "diaDec": 0.5,
+   "dia": "1/2",
+   "fl": "4",
+   "loc": "1-1/4",
+   "locDec": 1.25,
+   "shank": "1/2",
+   "oal": "3",
+   "helix": "38°",
+   "series": "GOMILL-GP",
+   "mfr": "GOMILL-GP-1633"
+  },
+  {
+   "sku": "09991701",
+   "brand": "Hertel",
+   "title": "1/2\" 4FL Roughing (corncob) — Bright",
+   "kind": "endmill",
+   "coat": "bright",
+   "coatName": "Bright/Uncoated",
+   "price": 74.6,
+   "stock": 21,
+   "lead": "Next day",
+   "desc": "3\" OAL, 1/2\" shank dia, solid carbide, single end, centercutting",
+   "diaDec": 0.5,
+   "dia": "1/2",
+   "fl": "4",
+   "loc": "1-1/4",
+   "locDec": 1.25,
+   "shank": "1/2",
+   "oal": "3",
+   "helix": "38°",
+   "series": "HTL-RGH",
+   "mfr": "HTL-RGH-1701"
+  },
+  {
+   "sku": "09991766",
+   "brand": "OSG",
+   "title": "1/2\" 4FL Variable-index — EXOCARB",
+   "kind": "endmill",
+   "coat": "altin",
+   "coatName": "AlTiN",
+   "price": 109.9,
+   "stock": 86,
+   "lead": "Next day",
+   "desc": "3\" OAL, 1/2\" shank dia, solid carbide, single end, centercutting",
+   "diaDec": 0.5,
+   "dia": "1/2",
+   "fl": "4",
+   "loc": "1-1/4",
+   "locDec": 1.25,
+   "shank": "1/2",
+   "oal": "3",
+   "helix": "38°",
+   "series": "EXOCARB-VI",
+   "mfr": "EXOCARB-VI-1766"
+  },
+  {
+   "sku": "09990125",
+   "brand": "Accupro",
+   "title": "1/4\" Carbide Jobber Drill — AlTiN",
+   "kind": "drill",
+   "coat": "altin",
+   "coatName": "AlTiN",
+   "price": 34.6,
+   "stock": 120,
+   "lead": "Next day",
+   "desc": "3.4\" OAL, 140° split point, right hand spiral flute, AlTiN coated",
+   "diaDec": 0.25,
+   "dia": "1/4",
+   "fl": "2",
+   "loc": "2.5 flute",
+   "locDec": 2.5,
+   "shank": "1/4",
+   "oal": "3.4",
+   "helix": "140° point",
+   "series": "ACC-JD",
+   "mfr": "ACC-JD-0125"
+  },
+  {
+   "sku": "09990133",
+   "brand": "Kennametal",
+   "title": "1/4\" Carbide Drill — Coolant-through, TiAlN",
+   "kind": "drill",
+   "coat": "tialn",
+   "coatName": "TiAlN",
+   "price": 58.2,
+   "stock": 36,
+   "lead": "Next day",
+   "desc": "3.6\" OAL, 140° point, coolant-through, 5×D, TiAlN coated",
+   "diaDec": 0.25,
+   "dia": "1/4",
+   "fl": "2",
+   "loc": "2.5 flute",
+   "locDec": 2.5,
+   "shank": "1/4",
+   "oal": "3.6",
+   "helix": "140° point",
+   "series": "KEN-CT5",
+   "mfr": "KEN-CT5-0133",
+   "coolant": true
+  },
+  {
+   "sku": "09990140",
+   "brand": "SGS",
+   "title": "1/4\" Carbide Drill — Polished, aluminum-spec",
+   "kind": "drill",
+   "coat": "bright",
+   "coatName": "Bright/Polished",
+   "price": 41.75,
+   "stock": 64,
+   "lead": "Next day",
+   "desc": "3.4\" OAL, 130° point, polished flutes for aluminum, right hand spiral",
+   "diaDec": 0.25,
+   "dia": "1/4",
+   "fl": "2",
+   "loc": "2.5 flute",
+   "locDec": 2.5,
+   "shank": "1/4",
+   "oal": "3.4",
+   "helix": "130° point",
+   "series": "SGS-AL",
+   "mfr": "SGS-AL-0140"
+  },
+  {
+   "sku": "09990301",
+   "brand": "Accupro",
+   "title": "3/8-16 UNC Spiral Flute Tap — TiN",
+   "kind": "tap",
+   "coat": "tin",
+   "coatName": "TiN",
+   "price": 22.4,
+   "stock": 180,
+   "lead": "Next day",
+   "desc": "Spiral flute, bottoming chamfer, H3 limit, TiN coated HSS-E, for blind holes",
+   "diaDec": 0.375,
+   "dia": "3/8-16",
+   "fl": "3",
+   "loc": "1-1/8",
+   "locDec": 1.125,
+   "shank": ".381",
+   "oal": "2-15/16",
+   "helix": "35° spiral",
+   "series": "ACC-SF",
+   "mfr": "ACC-SF-0301",
+   "tpi": 16,
+   "thread": "3/8-16 UNC",
+   "tapStyle": "Spiral flute",
+   "chamferType": "Bottoming",
+   "material": "HSS-E"
+  },
+  {
+   "sku": "09990308",
+   "brand": "OSG",
+   "title": "3/8-16 UNC Spiral Point Tap — Bright",
+   "kind": "tap",
+   "coat": "bright",
+   "coatName": "Bright/Uncoated",
+   "price": 19.85,
+   "stock": 140,
+   "lead": "Next day",
+   "desc": "Spiral point (gun), plug chamfer, H3 limit, HSS-E, for through holes",
+   "diaDec": 0.375,
+   "dia": "3/8-16",
+   "fl": "3",
+   "loc": "1-1/8",
+   "locDec": 1.125,
+   "shank": ".381",
+   "oal": "2-15/16",
+   "helix": "Spiral point",
+   "series": "OSG-SP",
+   "mfr": "OSG-SP-0308",
+   "tpi": 16,
+   "thread": "3/8-16 UNC",
+   "tapStyle": "Spiral point",
+   "chamferType": "Plug",
+   "material": "HSS-E"
+  },
+  {
+   "sku": "09990315",
+   "brand": "Hertel",
+   "title": "3/8-16 UNC Forming Tap — TiCN",
+   "kind": "tap",
+   "coat": "ticn",
+   "coatName": "TiCN",
+   "price": 27.1,
+   "stock": 75,
+   "lead": "Next day",
+   "desc": "Thread forming (roll) tap, no chips, H5 limit, TiCN coated HSS-E, for aluminum and ductile steels",
+   "diaDec": 0.375,
+   "dia": "3/8-16",
+   "fl": "—",
+   "loc": "1-1/8",
+   "locDec": 1.125,
+   "shank": ".381",
+   "oal": "2-15/16",
+   "helix": "Form",
+   "series": "HTL-FT",
+   "mfr": "HTL-FT-0315",
+   "tpi": 16,
+   "thread": "3/8-16 UNC",
+   "tapStyle": "Forming",
+   "chamferType": "Bottoming",
+   "material": "HSS-E"
+  },
+  {
+   "sku": "09990322",
+   "brand": "Kennametal",
+   "title": "3/8-16 UNC Spiral Flute Tap — Stainless, TiAlN",
+   "kind": "tap",
+   "coat": "tialn",
+   "coatName": "TiAlN",
+   "price": 34.9,
+   "stock": 48,
+   "lead": "Next day",
+   "desc": "Spiral flute, bottoming chamfer, H3 limit, TiAlN coated powder-metal HSS, for stainless and superalloys",
+   "diaDec": 0.375,
+   "dia": "3/8-16",
+   "fl": "3",
+   "loc": "1-1/8",
+   "locDec": 1.125,
+   "shank": ".381",
+   "oal": "2-15/16",
+   "helix": "40° spiral",
+   "series": "KEN-SS",
+   "mfr": "KEN-SS-0322",
+   "tpi": 16,
+   "thread": "3/8-16 UNC",
+   "tapStyle": "Spiral flute",
+   "chamferType": "Bottoming",
+   "material": "PM-HSS"
+  },
+  {
+   "sku": "09990160",
+   "brand": "Hertel",
+   "title": "5/16\" (.3125\") Tap Drill for 3/8-16 — TiN",
+   "kind": "drill",
+   "coat": "tin",
+   "coatName": "TiN",
+   "price": 16.8,
+   "stock": 150,
+   "lead": "Next day",
+   "desc": "4.5\" OAL, 118° point, jobber length, TiN coated HSS, tap drill for 3/8-16 UNC",
+   "diaDec": 0.3125,
+   "dia": "5/16",
+   "fl": "2",
+   "loc": "3.0 flute",
+   "locDec": 3.0,
+   "shank": "5/16",
+   "oal": "4.5",
+   "helix": "118° point",
+   "series": "HTL-TD",
+   "mfr": "HTL-TD-0160",
+   "material": "High Speed Steel"
+  },
+  {
+   "sku": "09990240",
+   "brand": "Hertel",
+   "title": "90° 3-Flute Carbide Chamfer Mill — Bright",
+   "kind": "chamfer",
+   "coat": "bright",
+   "coatName": "Bright/Uncoated",
+   "price": 44.6,
+   "stock": 90,
+   "lead": "Next day",
+   "desc": "2-1/2\" OAL, 1/2\" shank dia, 90° included angle, polished flutes for aluminum",
+   "diaDec": 0.5,
+   "dia": "1/2",
+   "fl": "3",
+   "loc": "1/4",
+   "locDec": 0.25,
+   "shank": "1/2",
+   "oal": "2-1/2",
+   "helix": "90° incl.",
+   "series": "HTL-CHM",
+   "mfr": "HTL-CHM-0240"
+  },
+  {
+   "sku": "09990247",
+   "brand": "OSG",
+   "title": "60° 4-Flute Carbide Chamfer Mill — AlTiN",
+   "kind": "chamfer",
+   "coat": "altin",
+   "coatName": "AlTiN",
+   "price": 61.3,
+   "stock": 38,
+   "lead": "Next day",
+   "desc": "2-1/2\" OAL, 1/2\" shank dia, 60° included angle, AlTiN coated",
+   "diaDec": 0.5,
+   "dia": "1/2",
+   "fl": "4",
+   "loc": "5/16",
+   "locDec": 0.3125,
+   "shank": "1/2",
+   "oal": "2-1/2",
+   "helix": "60° incl.",
+   "series": "OSG-CH60",
+   "mfr": "OSG-CH60-0247"
+  },
+  {
+   "sku": "09990847",
+   "brand": "Accupro",
+   "title": "1/2\" 2-Flute Carbide Ball End Mill — ZrN",
+   "kind": "ball",
+   "coat": "zrn",
+   "coatName": "ZrN",
+   "price": 52.8,
+   "stock": 66,
+   "lead": "Next day",
+   "desc": "3\" OAL, 1/2\" shank dia, 30° helix, ball nose, ZrN coated aluminum-spec, single end",
+   "diaDec": 0.5,
+   "dia": "1/2",
+   "fl": "2",
+   "loc": "1-1/4",
+   "locDec": 1.25,
+   "shank": "1/2",
+   "oal": "3",
+   "helix": "30°",
+   "series": "ACC2-BN-AL",
+   "mfr": "ACC2-BN-AL-0847"
+  },
+  {
+   "sku": "09990854",
+   "brand": "Niagara",
+   "title": "1/2\" 4-Flute Carbide Ball End Mill — AlTiN",
+   "kind": "ball",
+   "coat": "altin",
+   "coatName": "AlTiN",
+   "price": 74.2,
+   "stock": 42,
+   "lead": "Next day",
+   "desc": "3\" OAL, 1/2\" shank dia, 30° helix, ball nose, AlTiN coated, single end",
+   "diaDec": 0.5,
+   "dia": "1/2",
+   "fl": "4",
+   "loc": "1-1/4",
+   "locDec": 1.25,
+   "shank": "1/2",
+   "oal": "3",
+   "helix": "30°",
+   "series": "N-BN4",
+   "mfr": "N-BN4-0854"
+  },
+  {
+   "sku": "09995001",
+   "brand": "Accupro",
+   "title": "CAT40 ER32 Collet Chuck — 4\" Projection",
+   "kind": "holder",
+   "coat": "bright",
+   "coatName": "—",
+   "price": 129.0,
+   "stock": 64,
+   "lead": "Next day",
+   "desc": "CAT40 taper, ER32 collet system, 4\" projection, balanced to G2.5 at 20,000 RPM",
+   "series": "ACC-CAT40-ER32",
+   "mfr": "ACC-CAT40-ER32-4",
+   "specs": [
+    [
+     "Taper",
+     "CAT40"
+    ],
+    [
+     "Collet System",
+     "ER32"
+    ],
+    [
+     "Projection",
+     "4\""
+    ],
+    [
+     "Balance",
+     "G2.5 @ 20,000 RPM"
+    ],
+    [
+     "Coolant",
+     "Through spindle"
+    ],
+    [
+     "Material",
+     "Alloy steel, hardened"
+    ]
+   ]
+  },
+  {
+   "sku": "09995012",
+   "brand": "Accupro",
+   "title": "ER32 Collet — 1/2\" Capacity",
+   "kind": "collet",
+   "coat": "bright",
+   "coatName": "—",
+   "price": 18.4,
+   "stock": 220,
+   "lead": "Next day",
+   "desc": "ER32 precision collet, 1/2\" nominal, .0002\" TIR, spring steel",
+   "series": "ACC-ER32",
+   "mfr": "ACC-ER32-500",
+   "specs": [
+    [
+     "Collet Series",
+     "ER32"
+    ],
+    [
+     "Nominal Size",
+     "1/2\""
+    ],
+    [
+     "Clamping Range",
+     ".472\" – .512\""
+    ],
+    [
+     "Runout",
+     ".0002\" TIR"
+    ],
+    [
+     "Material",
+     "Spring steel"
+    ]
+   ]
+  },
+  {
+   "sku": "09995013",
+   "brand": "Accupro",
+   "title": "ER32 Collet — 1/4\" Capacity",
+   "kind": "collet",
+   "coat": "bright",
+   "coatName": "—",
+   "price": 18.4,
+   "stock": 180,
+   "lead": "Next day",
+   "desc": "ER32 precision collet, 1/4\" nominal, .0002\" TIR, spring steel",
+   "series": "ACC-ER32",
+   "mfr": "ACC-ER32-250",
+   "specs": [
+    [
+     "Collet Series",
+     "ER32"
+    ],
+    [
+     "Nominal Size",
+     "1/4\""
+    ],
+    [
+     "Clamping Range",
+     ".236\" – .276\""
+    ],
+    [
+     "Runout",
+     ".0002\" TIR"
+    ],
+    [
+     "Material",
+     "Spring steel"
+    ]
+   ]
+  },
+  {
+   "sku": "09995014",
+   "brand": "Accupro",
+   "title": "ER32 Collet — 3/8\" Capacity",
+   "kind": "collet",
+   "coat": "bright",
+   "coatName": "—",
+   "price": 18.4,
+   "stock": 150,
+   "lead": "Next day",
+   "desc": "ER32 precision collet, 3/8\" nominal, .0002\" TIR, spring steel",
+   "series": "ACC-ER32",
+   "mfr": "ACC-ER32-375",
+   "specs": [
+    [
+     "Collet Series",
+     "ER32"
+    ],
+    [
+     "Nominal Size",
+     "3/8\""
+    ],
+    [
+     "Clamping Range",
+     ".354\" – .394\""
+    ],
+    [
+     "Runout",
+     ".0002\" TIR"
+    ],
+    [
+     "Material",
+     "Spring steel"
+    ]
+   ]
+  },
+  {
+   "sku": "09995015",
+   "brand": "Accupro",
+   "title": "ER32 Collet — 3/4\" Capacity",
+   "kind": "collet",
+   "coat": "bright",
+   "coatName": "—",
+   "price": 18.4,
+   "stock": 120,
+   "lead": "Next day",
+   "desc": "ER32 precision collet, 3/4\" nominal, .0002\" TIR, spring steel",
+   "series": "ACC-ER32",
+   "mfr": "ACC-ER32-750",
+   "specs": [
+    [
+     "Collet Series",
+     "ER32"
+    ],
+    [
+     "Nominal Size",
+     "3/4\""
+    ],
+    [
+     "Clamping Range",
+     ".709\" – .749\""
+    ],
+    [
+     "Runout",
+     ".0002\" TIR"
+    ],
+    [
+     "Material",
+     "Spring steel"
+    ]
+   ]
+  },
+  {
+   "sku": "09995100",
+   "brand": "Hertel",
+   "title": "Semi-synthetic Cutting Fluid — 5 Gal",
+   "kind": "coolant",
+   "coat": "bright",
+   "coatName": "—",
+   "price": 96.5,
+   "stock": 41,
+   "lead": "Next day",
+   "desc": "General-purpose semi-synthetic, low foam, 5% – 8% concentration, ferrous and non-ferrous",
+   "series": "HTL-CF",
+   "mfr": "HTL-CF-5G",
+   "specs": [
+    [
+     "Type",
+     "Semi-synthetic"
+    ],
+    [
+     "Container",
+     "5 gal pail"
+    ],
+    [
+     "Concentration",
+     "5% – 8%"
+    ],
+    [
+     "Materials",
+     "Ferrous, aluminum, brass"
+    ],
+    [
+     "Foam",
+     "Low"
+    ]
+   ]
+  }
+ ]
+}
